@@ -1,0 +1,57 @@
+.brands-section {
+    width: 100%;
+    padding: 80px 20px 20px 40px;
+    .section-title {
+        color: #2C304B;
+        border-left: 1px solid #2C304B;
+        font-size: 23px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        padding: 0px 20px;
+    }
+    .section-desc {
+        font-size: 14px;
+        font-weight: 300;
+        padding: 20px 25px;
+    }
+    img {
+        width: 95%;
+        height: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .brands-section {
+        padding: 40px 10px 10px 20px;
+        &.is-page {
+            padding: 100px 10px 10px 20px;
+        }
+        .section-title {
+            font-size: 20px;
+        }
+        .section-desc {
+           font-size:13px;
+            padding: 10px 15px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .brands-section {
+        padding: 40px 5px 5px 10px;
+        &.is-page {
+            padding: 100px 5px 5px 10px;
+        }
+        .section-title {
+            font-size: 20px;
+            padding: 0px 10px;
+        }
+        .section-desc {
+            padding: 5px 10px;
+           font-size:13px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

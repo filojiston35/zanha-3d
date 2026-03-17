@@ -1,0 +1,173 @@
+.contactus-section {
+  padding: 80px 20px 30px 40px;
+  background:
+    linear-gradient(rgba(44, 48, 75, 0.8) 100%, rgba(44, 48, 75, 0.8) 100%),
+    url("/images/footer-bg.webp");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  color: white;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .section-title {
+    border-left: 1px solid white;
+    font-size: 23px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 0px 20px;
+  }
+  .section-desc {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 20px 25px;
+  }
+  .contact-container {
+    .header {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .sub-header {
+      font-size: 14px;
+      margin-bottom: 0.8rem;
+    }
+    .address {
+      padding: 10px;
+      .title {
+        font-size: 1rem;
+        display: block;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .description {
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
+    }
+    .email {
+      padding: 10px;
+      .title {
+        font-size: 1rem;
+        display: block;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .description {
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
+    }
+  }
+  .contactus-form-wrapper {
+    border-left: 1px solid white;
+    .contactus-form {
+      .title {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      max-width: 650px;
+    }
+  }
+  .form-control {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: white;
+  }
+  .form-group {
+    label {
+      font-size: 0.8rem;
+    }
+  }
+  .divider {
+    hr {
+      width: 100%;
+      border: 1px;
+      border-top: 1px solid white !important;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .contactus-section {
+    .contactus-form-wrapper {
+      border-left: none;
+      padding-top: 1rem;
+      .contactus-form {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .contactus-section {
+    padding: 40px 10px 10px 10px;
+    &.is-page {
+      padding: 100px 10px 10px 10px;
+    }
+    .section-title {
+      font-size: 20px;
+    }
+    .section-desc {
+     font-size:13px;
+      padding: 10px 15px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .contactus-section {
+    padding: 40px 10px 10px 10px;
+    &.is-page {
+      padding: 100px 10px 10px 10px;
+    }
+    .section-title {
+      font-size: 20px;
+      padding: 0px 10px;
+    }
+    .section-desc {
+      padding: 5px 10px;
+     font-size:13px;
+    }
+    .contact-container {
+      .header {
+        font-weight: 600;
+        font-size: 0.8rem;
+      }
+      .sub-header {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+      }
+      .address {
+        padding: 10px;
+        .title {
+          font-size: 0.8rem;
+        }
+        .description {
+          font-size: 0.7rem;
+        }
+      }
+      .email {
+        padding: 10px;
+        .title {
+          font-size: 0.8rem;
+        }
+        .description {
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .contactus-form-wrapper {
+      .contactus-form {
+        .title {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

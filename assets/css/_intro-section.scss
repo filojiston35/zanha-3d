@@ -1,0 +1,123 @@
+.intro-section {
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative !important;
+  color: #2c304b !important;
+  scroll-snap-align: start;
+  z-index: 0;
+  transition: 0.5s;
+  border-bottom: 1rem solid #2c304b;
+  h3 {
+    font-size: 3.2em;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    animation: 1s ease-in 0s 1 slideInFromTop50;
+    animation-delay: 0.7s;
+  }
+  p {
+    font-size: 1rem;
+    margin: 20px 0px;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    max-width: 700px;
+    animation: 1s ease-in 0s 1 slideInFromTop50;
+    animation-delay: 1.7s;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #111;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: 0.2s;
+    font-size: 0.8rem;
+    animation-delay: 2s;
+    &:hover {
+      letter-spacing: 0.1rem;
+    }
+  }
+  .request-form-button {
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #111;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #111;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: 0.2s;
+    font-size: 0.8rem;
+    animation-delay: 2s;
+    &:hover {
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .social {
+    position: absolute;
+    bottom: 2rem;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      cursor: pointer;
+      width: 30px !important;
+      margin: 0px 20px;
+      transition: 0.5s;
+      background: transparent;
+      &:hover {
+        transform: translateY(-20px);
+      }
+      a {
+        width: 30px !important;
+        height: 60px !important;
+        color: #111;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .intro-section {
+    padding: 40px;
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .intro-section {
+    padding: 20px;
+    h3 {
+      font-size: 1rem;
+      text-align: center;
+    }
+    p {
+      font-size: 0.8rem;
+      font-weight: 300;
+      text-align: center;
+    }
+    .request-form-button {
+      font-size: 0.7rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social {
+      margin-bottom: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

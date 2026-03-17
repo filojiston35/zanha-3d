@@ -1,0 +1,61 @@
+.vision-and-mission-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.7) 100%),
+    url("/images/sample2-section-bg.webp");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  color: white;
+  padding: 100px 20px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    padding: 0px 20px 5px 20px;
+    text-align: center;
+  }
+  p {
+    font-size: 0.8rem;
+    padding: 5px 20px 5px 20px;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  .divider {
+    display: none;
+    hr {
+      width: 50%;
+      border: 1px;
+      border-top: 1px solid white !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-and-mission-section {
+    padding: 70px 0px;
+    .section-title {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .vision-and-mission-section {
+    padding: 40px 0px;
+    .section-title {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    .divider {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

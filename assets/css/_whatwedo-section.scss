@@ -1,0 +1,81 @@
+.whatwedo-section {
+    width: 100%;
+    background: #2C304B;
+    color: white;
+    padding: 20px 0px;
+    .section-title {
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: .2rem;
+        padding: 0px 20px 5px 20px;
+        text-align: center;
+    }
+    .section-desc {
+        text-align: center;
+        font-size: .8rem;
+        padding: 5px 20px 5px 20px;
+    }
+    .section-cards {
+        display: flex;
+        justify-content: center;
+        div {
+            width: 220px;
+            margin: 40px;
+            padding: 20px;
+            border: 1px solid #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            span {
+                &:nth-child(2) {
+                    font-weight: 600;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .whatwedo-section {
+        .section-title {
+            font-size: 1.2rem;
+        }
+        .section-cards {
+            div {
+                margin: 20px;
+                i {
+                    font-size: 1em;
+                }
+                span {
+                    &:nth-child(2) {
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                    }
+                    &:nth-child(3) {
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .whatwedo-section {
+        .section-cards {
+            flex-direction: column;
+            align-items: center;
+            div {
+                margin: 5px;
+            }
+            span {
+                &:nth-child(2) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Vercel
+.vercel
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+# .env
+# .env.*
+# !.env.example
+
+# SonarQube SonarScanner files
+.scannerwork
+
+#custom build outputs
+js_dosyalari.json
+
+.cursor
